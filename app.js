@@ -1,3 +1,15 @@
+// Listen to tab events to enable outlines (accessibility improvement)
+document.body.addEventListener('click', function(){
+    document.documentElement.classList.add('no-focus-outline');
+})
+
+// Remove focus outlines if the mouse if used
+document.body.addEventListener('keyup', function(e) {
+    if (e.which === 9) /* tab */ {
+        document.documentElement.classList.remove('no-focus-outline');
+    };
+});
+
 const app = () => {
     const song = document.querySelector('.song');
     const play = document.querySelector('.play');

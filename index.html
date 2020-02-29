@@ -1,84 +1,92 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie-edge">
-    <link rel="stylesheet" href="./style.css">
-    <title>Arit's Meditation App</title>
-</head>
-<body>
+<html lang="en" class="no-focus-outline">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie-edge">
+		<link rel="stylesheet" href="./style.css">
+		<link href="https://fonts.googleapis.com/css?family=Architects+Daughter|Montserrat&display=swap" rel="stylesheet">
+		<title>Arit's Meditation App</title>
+	</head>
+	<body>
 
-    <div class="app">
-        <div class="vid-container">
-            <video loop>
-                <source src="./video/rain.mp4" type="video/mp4" />
-            </video>
-        </div>
+		
+		
+		<div class="app">
+			<div class="heading">
+				<h1 class="app-title">Meditation App</h1>
+				<h3 class="subtitle">"May my meditation be sweet to the Lord; I will be glad in Him!" <em>(Psalm 104:34)</em></h3>
+			</div>
 
-        <div class="time-select">
-            <button data-time="120">2 Minutes</button>
-            <button data-time="300">5 Minutes</button>
-            <button data-time="600">10 Minutes</button>
-        </div>
-        <div class="player-container">
-            <audio class="song">
-                <source src="./sounds/rain.mp3" type="audio/mpeg" />
-            </audio>
-            <img src="./svg/play.svg" alt="play-button" class="play" />
-            <svg
-                class="track-outline"
-                width="453"
-                height="453"
-                viewBox="0 0 453 453"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-            >
-                <circle
-                    cx="226.5"
-                    cy="226.5"
-                    r="216.5"
-                    stroke="white"
-                    stroke-width="20"
-                />
-            </svg>
-            <svg
-                class="moving-outline"
-                width="453"
-                height="453"
-                viewBox="0 0 453 453"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-            >
-                <circle
-                    cx="226.5"
-                    cy="226.5"
-                    r="216.5"
-                    stroke="#018EBA"
-                    stroke-width="20"
-                />
-            </svg>
-            <h3 class="time-display">0:00</h3>
+			<div class="whole-container">
+				<div class="vid-container">
+					<video loop>
+						<source src="./video/rain-loop.mp4" type="video/mp4" />
+					</video>
+				</div>
+	
+				<div class="time-select">
+					<button data-time="120">2 Minutes</button>
+					<button data-time="300">5 Minutes</button>
+					<button data-time="600">10 Minutes</button>
+				</div>
+				<div class="player-container">
+					<audio class="song">
+						<source src="./sounds/river.mp3" type="audio/mpeg" />
+					</audio>
+					<img src="./svg/play.svg" alt="play-button" class="play" />
+					<svg
+						class="track-outline"
+						width="453"
+						height="453"
+						viewBox="0 0 453 453"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<circle
+							cx="226.5"
+							cy="226.5"
+							r="216.5"
+							stroke="white"
+							stroke-width="20"
+						/>
+					</svg>
+					<svg
+						class="moving-outline"
+						width="453"
+						height="453"
+						viewBox="0 0 453 453"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<circle
+							cx="226.5"
+							cy="226.5"
+							r="216.5"
+							stroke="#6d0f0f"
+							stroke-width="20"
+						/>
+					</svg>
+					<h3 class="time-display">0:00</h3>
+	
+				</div>
+				<div class="sound-picker">
+					<button
+						data-sound="./sounds/rain.mp3"
+						data-video="./video/rain-loop.mp4"
+					>
+						<img src="./svg/rain.svg" alt="rain-icon">
+					</button>
+					<button
+						data-sound="./sounds/river.mp3"
+						data-video="./video/river-loop.mp4"
+					>
+						<img src="./svg/river.svg" alt="river-icon">
+					</button>
+				</div>
+			</div>
+		</div>
 
-        </div>
-        <div class="sound-picker">
-            <button
-                data-sound="./sounds/rain.mp3"
-                data-video="./video/rain.mp4"
-            >
-                <img src="./svg/rain.svg" alt="rain-icon">
-            </button>
-            <button
-                data-sound="./sounds/beach.mp3"
-                data-video="./video/beach.mp4"
-            >
-                <img src="./svg/beach.svg" alt="beach-icon">
-            </button>
-        </div>
-    </div>
-    
-    
-    
-    <script src="./app.js"></script>
-</body>
+		<script src="./app.js"></script>
+	</body>
 </html>
