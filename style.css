@@ -66,8 +66,8 @@
 }
 
 video {
-    height: 100vh;
-    width: auto;
+    height: auto;
+    width: 100vw;
     position: fixed;
     top: 0%;
     left: 0%;
